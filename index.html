@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sales Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 30px;">
+    <img src="./img/logo.PNG" alt="Pakam Logo" style="height: 80px; border-radius: 10px;">
+    <div>
+      <h1 style="margin: 0; font-size: 32px; font-family: 'Segoe UI', sans-serif; color: #2c3e50;">Pakam Spices & Foods</h1>
+      <p style="margin: 5px 0 0; font-size: 16px; font-family: 'Segoe UI', sans-serif; color: #6c757d;">Sales & Expense Dashboard</p>
+    </div>
+  </header>
+
+  <h2>💹 Profit Summary</h2>
+  <div id="profitKPIContainer" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 40px;"></div>
+
+  <h2>📌 Key Performance Indicators</h2>
+  <div id="kpiContainer"></div>
+
+  <h2>🥇 Top 5 Products by Revenue</h2>
+  <canvas id="topProductsChart"></canvas>
+
+  <h2>📈 Daily Revenue Trend (Last 14 Days)</h2>
+  <canvas id="dailyChart"></canvas>
+
+  <h2>📊 Weekly Revenue Trend (Last 4 Weeks)</h2>
+  <canvas id="weeklyChart"></canvas>
+
+  <h2>📅 Monthly Revenue Trend</h2>
+  <canvas id="monthlyChart"></canvas>
+
+  <h2>📌 Expense Summary</h2>
+  <div id="expenseKPIContainer" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 40px;"></div>
+
+  <h2>📈 Daily Expense Trend (Last 14 Days) </h2>
+  <canvas id="dailyExpenseChart"></canvas>
+
+  <h2>📊 Weekly Expense Trend (Last 4 Weeks)</h2>
+  <canvas id="weeklyExpenseChart"></canvas>
+
+  <h2>📅 Monthly Expense Trend</h2>
+  <canvas id="monthlyExpenseChart"></canvas>
+
+  <h2>🏷️ Top 5 Expense Categories</h2>
+  <canvas id="topExpenseChart"></canvas>
+
+  <h2>🧠 Top 5 Customers by Revenue</h2>
+  <canvas id="topCustomersChart"></canvas>
+
+  <h2>📌 Customer Summary</h2>
+  <div id="customerKPIContainer" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 40px;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
