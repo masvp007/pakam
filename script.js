@@ -313,4 +313,9 @@ fetch("https://script.google.com/macros/s/AKfycbw1OQxcByLThXIHftk5ij1Gi-mB2C0Vhp
         });
 
       });
+
   });
+
+function exportPDF() {
+  window.print(); // Simple fallback — prints to PDF via browser
+}
